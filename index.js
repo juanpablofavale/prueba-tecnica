@@ -1,6 +1,7 @@
 import express from 'express'
 import 'dotenv/config.js'
-import cors from "cors"
+import './config/database.js'
+import cors from 'cors'
 import notFoundHandler from './middlewares/notFoundHandler.js'
 import errorHandler from './middlewares/errorHandler.js'
 import indexRouter from './router/indexRouter.js'
