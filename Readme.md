@@ -2,7 +2,7 @@ Prueba Técnica NodeJS
 
 Crud para prueba técnica con Node JS, Express JS, Mongo, Mongoose y validación con Joi
 
-Petición get        a '/api/accounts/'
+Petición get        a '/api/accounts/' <br>
 para obtener todas las cuentas
 
 Petición get        a '/api/accounts/:_id'
