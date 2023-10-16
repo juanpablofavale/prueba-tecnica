@@ -1,6 +1,6 @@
-Prueba Técnica NodeJS
+<h1>Prueba Técnica NodeJS</h1>
 
-Crud para prueba técnica con Node JS, Express JS, Mongo, Mongoose y validación con Joi
+<h3>Crud para prueba técnica con Node JS, Express JS, Mongo, Mongoose y validación con Joi</h3>
 
 Petición get        a '/api/accounts/' <br>
 para obtener todas las cuentas
