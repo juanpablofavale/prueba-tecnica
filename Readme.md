@@ -1,6 +1,6 @@
 Prueba Técnica NodeJS
 
-Crud para prueba técnica con Node JS, Express JS, Mongo, Mongoose y validacion con Joi
+Crud para prueba técnica con Node JS, Express JS, Mongo, Mongoose y validación con Joi
 
 Petición get        a '/api/accounts/'
 para obtener todas las cuentas
@@ -10,7 +10,7 @@ para obtener una cuenta segun id
 
 Petición post       a '/api/accounts/'
 para crear una cuenta
-requiere objeto cuenta en el cuerpo de la peticion con el siguiente modelo:
+requiere objeto cuenta en el cuerpo de la petición con el siguiente modelo:
 {
     fullName: {type:String, required:true},
     numberClient: {type:String, required:true},
@@ -20,7 +20,7 @@ requiere objeto cuenta en el cuerpo de la peticion con el siguiente modelo:
 
 Petición put        a '/api/accounts/:_id'
 para modificar una cuenta
-requiere objeto cuenta en el cuerpo de la peticion con el siguiente modelo:
+requiere objeto cuenta en el cuerpo de la petición con el siguiente modelo:
 {
     fullName: {type:String, required:true},
     numberClient: {type:String, required:true},
