@@ -1,5 +1,7 @@
 Prueba Técnica NodeJS
 
+Crud para prueba técnica con Node JS, Express JS, Mongo, Mongoose y validacion con Joi
+
 Petición get        a '/api/accounts/'
 para obtener todas las cuentas
 
