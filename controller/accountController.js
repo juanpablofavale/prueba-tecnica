@@ -1,4 +1,4 @@
-import Account from "../models/Account.js";
+import Account from '../models/Account.js';
 
 const initRes = () => {
     return {
@@ -45,6 +45,19 @@ const accountController = {
         try {
             const id = req.params._id
             const response = await Account.findByIdAndUpdate(id, req.body, {new:true})
+            genRes.response = response
+            res.status(200).json(genRes)
+        } catch (err) {
+            next(err)
+        }
+    },
+    putPay: async (req, res, next) => {
+        const genRes = initRes()
+        try {
+            const id = req.params._id
+            const pay = req.body
+            const aux = await Account.findById(id)
+            const response = await Account.findByIdAndUpdate(id, {$set: {balance:aux.balance-pay.pay}, $push: {payments: pay}}, {new:true})
             genRes.response = response
             res.status(200).json(genRes)
         } catch (err) {

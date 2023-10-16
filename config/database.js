@@ -1,4 +1,4 @@
-import mongoose from "mongoose";
+import mongoose from 'mongoose';
 import 'dotenv/config.js'
 
 let uri_link = process.env.MONGO

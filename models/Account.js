@@ -1,4 +1,4 @@
-import { Schema, model } from "mongoose";
+import { Schema, model } from 'mongoose';
 
 const collection = 'accounts'
 
@@ -8,8 +8,8 @@ const schema = new Schema({
     imageProfile: {type:String, required:true},
     balance:{type:Number, default:0},
     payments:[{
-        fecha:{type:Date},
-        payments: {type:Number}
+        date:{type:String},
+        pay:{type:Number}
     }]
 })
 
